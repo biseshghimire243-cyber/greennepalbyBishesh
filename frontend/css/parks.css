@@ -1,0 +1,198 @@
+/* ===========================
+   PARK HERO
+=========================== */
+
+
+.parks-hero{
+
+height:70vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+url("../images/park-bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+}
+
+
+.parks-hero h1{
+
+font-size:65px;
+
+margin-bottom:20px;
+
+}
+
+
+.parks-hero p{
+
+font-size:22px;
+
+}
+
+
+
+
+/* ===========================
+   PARK SECTION
+=========================== */
+
+
+.parks-section{
+
+padding:100px 8%;
+
+background:#f5fff6;
+
+}
+
+
+
+.parks-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+
+
+
+.park-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+
+.park-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+
+.park-card img{
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+
+
+.park-info{
+
+padding:25px;
+
+}
+
+
+
+.park-info h3{
+
+color:#2E8B57;
+
+font-size:26px;
+
+margin-bottom:10px;
+
+}
+
+
+
+.park-info p{
+
+line-height:1.8;
+
+}
+
+
+
+
+/* ===========================
+   BANNER
+=========================== */
+
+
+.nature-banner{
+
+padding:100px 10%;
+
+text-align:center;
+
+background:#2E8B57;
+
+color:white;
+
+}
+
+
+
+.nature-banner h2{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.nature-banner p{
+
+font-size:18px;
+
+}
+
+
+
+.nature-banner a{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:15px 35px;
+
+background:white;
+
+color:#2E8B57;
+
+border-radius:30px;
+
+font-weight:bold;
+
+}
