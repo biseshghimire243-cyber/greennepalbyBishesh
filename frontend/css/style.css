@@ -513,3 +513,81 @@ footer h2{
     line-height:1.7;
 
 }
+
+/* ===========================
+   WILDLIFE
+=========================== */
+
+.wildlife{
+
+    padding:100px 8%;
+    background:#ffffff;
+
+}
+
+.wildlife h2{
+
+    text-align:center;
+    font-size:45px;
+    color:#2E8B57;
+    margin-bottom:50px;
+
+}
+
+.wildlife-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+
+}
+
+.wild-card{
+
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.1);
+    transition:.4s;
+
+}
+
+.wild-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.wild-card img{
+
+    height:250px;
+    object-fit:cover;
+
+}
+
+.wild-content{
+
+    padding:25px;
+
+}
+
+.wild-content h3{
+
+    color:#2E8B57;
+    margin-bottom:10px;
+
+}
+
+.wild-content h4{
+
+    color:#666;
+    margin-bottom:12px;
+    font-weight:500;
+
+}
+
+.wild-content p{
+
+    line-height:1.8;
+
+}
