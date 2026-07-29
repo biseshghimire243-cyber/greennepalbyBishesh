@@ -2,7 +2,6 @@
    ABOUT HERO
 =========================== */
 
-
 .about-hero{
 
 height:70vh;
@@ -12,7 +11,7 @@ linear-gradient(
 rgba(0,0,0,.5),
 rgba(0,0,0,.5)
 ),
-url("../images/about-bg.jpg");
+url("https://images.unsplash.com/photo-1469474968028-56623f02e42e");
 
 background-size:cover;
 
@@ -31,6 +30,22 @@ color:white;
 }
 
 
+
+.about-hero h1{
+
+font-size:65px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.about-hero p{
+
+font-size:22px;
+
+}
 
 .about-hero h1{
 
