@@ -11,14 +11,11 @@ form.addEventListener("submit", async (e) => {
     const confirmPassword = document.getElementById("confirmPassword").value;
 
     if (password !== confirmPassword) {
-
-        alert("❌ Passwords do not match.");
-
+        alert("❌ Passwords do not match!");
         return;
-
     }
 
-    const name = firstName + " " + lastName;
+    const name = `${firstName} ${lastName}`;
 
     try {
 
@@ -31,11 +28,9 @@ form.addEventListener("submit", async (e) => {
             },
 
             body: JSON.stringify({
-
                 name,
                 email,
                 password
-
             })
 
         });
@@ -52,7 +47,7 @@ form.addEventListener("submit", async (e) => {
 
         } else {
 
-            alert(data.message || "Registration Failed");
+            alert(data.message);
 
         }
 
@@ -60,7 +55,7 @@ form.addEventListener("submit", async (e) => {
 
         console.error(error);
 
-        alert("❌ Server Error");
+        alert("❌ Unable to connect to the server.");
 
     }
 

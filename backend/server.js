@@ -13,8 +13,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve frontend files
-app.use(express.static(path.join(__dirname, "../frontend")));
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -32,11 +30,12 @@ db.connect((err) => {
     }
 });
 
-// Home Page
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/index.html"));
+    return res.redirect("/login.html");
 });
 
+// Serve frontend files
+app.use(express.static(path.join(__dirname, "../frontend")));
 // ---------------- REGISTER ----------------
 
 app.post("/register", async (req, res) => {
