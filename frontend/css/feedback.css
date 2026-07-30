@@ -147,7 +147,7 @@
 
 .feedback-stats{
     padding:70px 8%;
-    background:#2e7d32;
+    background:#e2e8e3;
     color:#fff;
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -174,15 +174,21 @@
 =========================== */
 
 .report-section{
-    padding:70px 8%;
-    background:#f8faf8;
-    text-align:center;
+    background:#ffffff;
+    padding:80px 8%;
 }
 
 .report-section h2{
-    font-size:38px;
+    text-align:center;
+    font-size:40px;
     color:#2e7d32;
-    margin-bottom:40px;
+    margin-bottom:15px;
+}
+
+.report-section p{
+    text-align:center;
+    color:#666;
+    margin-bottom:45px;
 }
 
 .report-grid{
@@ -192,37 +198,49 @@
 }
 
 .report-card{
-    background:#fff;
-    padding:22px;
-    border-radius:18px;
-    border-top:4px solid #2e7d32;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    background:#f8f9fa;
+    border:1px solid #e5e5e5;
+    border-radius:16px;
+    padding:25px;
+    text-align:center;
     transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
 }
 
 .report-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    border-color:#d7ded7;
+    box-shadow:0 12px 25px rgba(46,125,50,.15);
 }
 
 .report-icon{
-    font-size:42px;
-    margin-bottom:10px;
+    font-size:45px;
+    margin-bottom:12px;
 }
 
 .report-card h3{
     color:#2e7d32;
-    font-size:21px;
-    margin:10px 0;
+    margin:12px 0;
+    font-size:22px;
 }
 
 .report-card p{
     color:#666;
-    font-size:15px;
     line-height:1.6;
+    margin:0;
 }
 
+@media(max-width:900px){
+    .report-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
 
+@media(max-width:600px){
+    .report-grid{
+        grid-template-columns:1fr;
+    }
+}
 /* ===========================
    FAQ
 =========================== */
