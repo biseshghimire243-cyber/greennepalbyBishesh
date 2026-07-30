@@ -2,231 +2,180 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Nepal | Wildlife</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <title>Green Nepal | Wildlife</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="css/wildlife.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/wildlife.css">
 </head>
-
 
 <body>
 
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">🌿 Green Nepal</a>
+      </div>
 
-<header>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="parks.html">Parks</a></li>
+        <li><a class="active" href="wildlife.html">Wildlife</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="rivers.html">Rivers</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav class="navbar">
+  <main>
+    <!-- Hero Section -->
+    <section class="wildlife-hero">
+      <div class="hero-content">
+        <h1>Wildlife of Nepal</h1>
+        <p>Discover Nepal's rare animals, endemic birds, and endangered species thriving in protected habitats.</p>
+        <a href="#explore-wildlife" class="btn btn-primary">Explore Biodiversity</a>
+      </div>
+    </section>
 
-<div class="logo">
-🌿 Green Nepal
-</div>
+    <!-- Key Statistics -->
+    <section class="stats-banner">
+      <div class="stat-item">
+        <h3>355+</h3>
+        <p>Royal Bengal Tigers</p>
+      </div>
+      <div class="stat-item">
+        <h3>750+</h3>
+        <p>One-horned Rhinos</p>
+      </div>
+      <div class="stat-item">
+        <h3>885+</h3>
+        <p>Bird Species</p>
+      </div>
+    </section>
 
+    <!-- Wildlife List Section -->
+    <section id="explore-wildlife" class="wildlife-section">
+      <div class="section-title">
+        <h2>Iconic Species</h2>
+        <p>Nepal is home to incredible terrestrial and avian biodiversity across diverse climates.</p>
+      </div>
 
-<ul class="nav-links">
+      <div class="wildlife-grid">
 
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="parks.html">Parks</a></li>
-
-<li><a class="active" href="wildlife.html">Wildlife</a></li>
-
-<li><a href="mountains.html">Mountains</a></li>
-
-<li><a href="rivers.html">Rivers</a></li>
-
-<li><a href="campaigns.html">Campaigns</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-
-
-<!-- HERO -->
-
-
-<section class="wildlife-hero">
-
-<div>
-
-<h1>
-Wildlife of Nepal
-</h1>
-
-<p>
-Discover Nepal's rare animals,
-birds and endangered species.
-</p>
-
-</div>
-
-</section>
-
-
-
-
-
-<!-- WILDLIFE LIST -->
-
-
-<section class="wildlife-section">
-
-
-<div class="section-title">
-
-<h2>
-Explore Wildlife
-</h2>
-
-<p>
-Nepal is home to amazing biodiversity.
-</p>
-
-</div>
-
-
-
-<div class="wildlife-grid">
-
-    <div class="wildlife-card">
-
-        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5" alt="One-horned Rhinoceros">
-
-        <div class="wildlife-info">
-
+        <!-- Wildlife Card 1 -->
+        <article class="wildlife-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5" alt="One-horned Rhinoceros">
+            <span class="status-badge status-vulnerable">Vulnerable</span>
+          </div>
+          <div class="card-body">
             <h3>One-horned Rhinoceros</h3>
+            <p>Nepal is globally celebrated for successful conservation drives that brought the Greater One-horned Rhinoceros back from the brink of extinction.</p>
+            
+            <ul class="species-facts">
+              <li><i class="fa-solid fa-tree"></i> <strong>Habitat:</strong> Floodplain Grasslands</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Region:</strong> Chitwan & Bardia</li>
+              <li><i class="fa-solid fa-shield-halved"></i> <strong>Protection:</strong> Zero-Poaching Zones</li>
+            </ul>
+          </div>
+        </article>
 
-            <p>
-                Nepal is famous for protecting the endangered one-horned rhinoceros in Chitwan National Park.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="wildlife-card">
-
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Royal Bengal Tiger">
-
-        <div class="wildlife-info">
-
+        <!-- Wildlife Card 2 -->
+        <article class="wildlife-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Royal Bengal Tiger">
+            <span class="status-badge status-endangered">Endangered</span>
+          </div>
+          <div class="card-body">
             <h3>Royal Bengal Tiger</h3>
+            <p>Nepal became the first country in the world to double its wild tiger population, protecting core jungle territories through community patrols.</p>
+            
+            <ul class="species-facts">
+              <li><i class="fa-solid fa-tree"></i> <strong>Habitat:</strong> Subtropical Terai Forests</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Region:</strong> Terai Arc Landscape</li>
+              <li><i class="fa-solid fa-shield-halved"></i> <strong>Protection:</strong> Wildlife Corridors</li>
+            </ul>
+          </div>
+        </article>
 
-            <p>
-                The Royal Bengal Tiger is one of Nepal's most iconic and endangered wild animals.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="wildlife-card">
-
-        <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46" alt="Red Panda">
-
-        <div class="wildlife-info">
-
+        <!-- Wildlife Card 3 -->
+        <article class="wildlife-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46" alt="Red Panda">
+            <span class="status-badge status-endangered">Endangered</span>
+          </div>
+          <div class="card-body">
             <h3>Red Panda</h3>
+            <p>The elusive Red Panda inhabits cool, temperate bamboo forests in the Himalayan foothills, protected by indigenous forest guardians.</p>
+            
+            <ul class="species-facts">
+              <li><i class="fa-solid fa-tree"></i> <strong>Habitat:</strong> Temperate Bamboo Canopy</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Region:</strong> Langtang & Makalu Barun</li>
+              <li><i class="fa-solid fa-shield-halved"></i> <strong>Protection:</strong> Community Forests</li>
+            </ul>
+          </div>
+        </article>
 
-            <p>
-                The rare Red Panda lives in Nepal's cool Himalayan forests and bamboo habitats.
-            </p>
+      </div>
+    </section>
 
+    <!-- Conservation Pillars Section -->
+    <section class="pillars-section">
+      <div class="section-title">
+        <h2>Conservation in Action</h2>
+        <p>How Green Nepal supports local communities and park rangers to safeguard habitats.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-box">
+          <i class="fa-solid fa-paw pillar-icon"></i>
+          <h3>Anti-Poaching Units</h3>
+          <p>Equipping youth patrols and park rangers with GPS and smart monitoring tools.</p>
         </div>
+        <div class="pillar-box">
+          <i class="fa-solid fa-route pillar-icon"></i>
+          <h3>Habitat Corridors</h3>
+          <p>Restoring natural forest bridges so animals can migrate safely between parks.</p>
+        </div>
+        <div class="pillar-box">
+          <i class="fa-solid fa-users-gear pillar-icon"></i>
+          <h3>Community Stewardship</h3>
+          <p>Empowering local buffer-zone communities with sustainable eco-tourism livelihoods.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Call to Action Banner -->
+    <section class="conservation">
+      <div class="banner-content">
+        <h2>Protect Nepal's Wildlife</h2>
+        <p>Safeguarding wildlife helps maintain crucial ecosystem balances for generations to come. Join our wildlife conservation programs.</p>
+        <a href="campaigns.html" class="btn btn-primary">Join Conservation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2>🌿 Green Nepal</h2>
+      <p>Protect Nature • Protect Future</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Green Nepal. All rights reserved.</p>
     </div>
+  </footer>
 
-</div>
-
-</section>
-
-
-
-
-
-
-<!-- CONSERVATION -->
-
-
-<section class="conservation">
-
-
-<h2>
-Protect Nepal's Wildlife
-</h2>
-
-
-<p>
-
-Wildlife conservation helps maintain
-ecosystem balance and protects
-endangered species for future generations.
-
-</p>
-
-
-<a href="campaigns.html">
-Join Conservation
-</a>
-
-
-</section>
-
-
-
-
-
-<footer>
-
-
-<h2>
-🌿 Green Nepal
-</h2>
-
-
-<p>
-Protect Nature • Protect Future
-</p>
-
-
-<div class="social">
-
-<i class="fa-brands fa-facebook"></i>
-
-<i class="fa-brands fa-instagram"></i>
-
-<i class="fa-brands fa-youtube"></i>
-
-</div>
-
-
-<p>
-© 2026 Green Nepal
-</p>
-
-
-</footer>
-
-
-
-
-<script src="js/app.js"></script>
-
-
+  <script src="js/app.js"></script>
 </body>
 
 </html>

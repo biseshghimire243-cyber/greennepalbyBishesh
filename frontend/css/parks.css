@@ -1,198 +1,322 @@
-/* ===========================
-   PARK HERO
-=========================== */
-
-
-.parks-hero{
-
-height:70vh;
-
-background:
-linear-gradient(
-rgba(0,0,0,.5),
-rgba(0,0,0,.5)
-),
-url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-color:white;
-
+/* ==========================================================================
+   CSS Variables & Theme Setup
+   ========================================================================== */
+:root {
+  --primary-color: #2e7d32;
+  --primary-dark: #1b5e20;
+  --primary-light: #4caf50;
+  --accent-color: #f57c00;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f4f7f4;
+  --white: #ffffff;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
 }
 
-
-.parks-hero h1{
-
-font-size:65px;
-
-margin-bottom:20px;
-
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-
-.parks-hero p{
-
-font-size:22px;
-
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.parks-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+              url('https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  text-align: center;
+  padding: 110px 20px;
 }
 
-
-
-
-/* ===========================
-   PARK SECTION
-=========================== */
-
-
-.parks-section{
-
-padding:100px 8%;
-
-background:#f5fff6;
-
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-
-
-.parks-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(320px,1fr));
-
-gap:35px;
-
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-
-
-
-.park-card{
-
-background:white;
-
-border-radius:20px;
-
-overflow:hidden;
-
-box-shadow:
-0 15px 35px rgba(0,0,0,.1);
-
-transition:.4s;
-
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
 }
 
-
-.park-card:hover{
-
-transform:translateY(-10px);
-
+/* ==========================================================================
+   Stats Banner
+   ========================================================================== */
+.stats-banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+  max-width: 1000px;
+  margin: -40px auto 40px auto;
+  padding: 25px 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  z-index: 10;
 }
 
-
-
-
-.park-card img{
-
-height:250px;
-
-object-fit:cover;
-
+.stat-item {
+  text-align: center;
 }
 
-
-
-.park-info{
-
-padding:25px;
-
+.stat-item h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin: 0;
 }
 
-
-
-.park-info h3{
-
-color:#2E8B57;
-
-font-size:26px;
-
-margin-bottom:10px;
-
+.stat-item p {
+  margin: 5px 0 0 0;
+  color: var(--text-light);
+  font-weight: 500;
 }
 
-
-
-.park-info p{
-
-line-height:1.8;
-
+/* ==========================================================================
+   Parks Grid Section
+   ========================================================================== */
+.parks-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-
-
-
-/* ===========================
-   BANNER
-=========================== */
-
-
-.nature-banner{
-
-padding:100px 10%;
-
-text-align:center;
-
-background:#2E8B57;
-
-color:white;
-
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-
-
-.nature-banner h2{
-
-font-size:45px;
-
-margin-bottom:20px;
-
+.section-title h2 {
+  font-size: 2.2rem;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
 }
 
-
-
-.nature-banner p{
-
-font-size:18px;
-
+.section-title p {
+  color: var(--text-light);
+  font-size: 1.05rem;
 }
 
+.parks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
 
+.park-card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
 
-.nature-banner a{
+.park-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
 
-display:inline-block;
+.card-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
 
-margin-top:30px;
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
 
-padding:15px 35px;
+.park-card:hover .card-image img {
+  transform: scale(1.05);
+}
 
-background:white;
+/* Badges */
+.park-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 
-color:#2E8B57;
+.tag-unesco {
+  background-color: #fef3c7;
+  color: #92400e;
+}
 
-border-radius:30px;
+.tag-standard {
+  background-color: #e8f5e9;
+  color: var(--primary-color);
+}
 
-font-weight:bold;
+.card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
+.card-body h3 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: var(--primary-dark);
+}
+
+.card-body p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.park-facts {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0 0;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.park-facts li {
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.park-facts li i {
+  color: var(--primary-color);
+  width: 16px;
+}
+
+/* ==========================================================================
+   Initiatives Section
+   ========================================================================== */
+.initiatives-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.initiative-box {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.initiative-box:hover {
+  transform: translateY(-4px);
+}
+
+.initiative-icon {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.initiative-box h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: var(--text-dark);
+}
+
+.initiative-box p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Buttons & Banner
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.nature-banner {
+  background: linear-gradient(rgba(27, 94, 32, 0.9), rgba(27, 94, 32, 0.9)),
+              url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 70px 20px;
+  margin-top: 60px;
+}
+
+.banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.banner-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stats-banner {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
 }

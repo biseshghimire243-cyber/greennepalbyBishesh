@@ -2,258 +2,234 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Nepal | National Parks</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<title>Green Nepal | National Parks</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link rel="stylesheet" href="css/parks.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/parks.css">
 </head>
-
 
 <body>
 
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">🌿 Green Nepal</a>
+      </div>
 
-<header>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="parks.html">Parks</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="rivers.html">Rivers</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav class="navbar">
+  <main>
+    <!-- Hero Section -->
+    <section class="parks-hero">
+      <div class="hero-content">
+        <h1>National Parks of Nepal</h1>
+        <p>Explore Nepal's protected landscapes—ranging from dense subtropical jungles to high-altitude Himalayan reserves.</p>
+        <a href="#explore-parks" class="btn btn-primary">Explore Parks</a>
+      </div>
+    </section>
 
-<div class="logo">
-🌿 Green Nepal
-</div>
+    <!-- Key Statistics Banner -->
+    <section class="stats-banner">
+      <div class="stat-item">
+        <h3>12</h3>
+        <p>National Parks</p>
+      </div>
+      <div class="stat-item">
+        <h3>23.39%</h3>
+        <p>Land Protected</p>
+      </div>
+      <div class="stat-item">
+        <h3>2 UNESCO</h3>
+        <p>World Heritage Sites</p>
+      </div>
+    </section>
 
+    <!-- Parks Grid Section -->
+    <section id="explore-parks" class="parks-section">
+      <div class="section-title">
+        <h2>Protected Wilderness Areas</h2>
+        <p>Discover pristine forests, snow peaks, and critical ecosystems across Nepal.</p>
+      </div>
 
-<ul class="nav-links">
+      <div class="parks-grid">
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a class="active" href="parks.html">Parks</a></li>
-<li><a href="wildlife.html">Wildlife</a></li>
-<li><a href="mountains.html">Mountains</a></li>
-<li><a href="rivers.html">Rivers</a></li>
-<li><a href="campaigns.html">Campaigns</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-
-
-<section class="parks-hero">
-
-<div>
-
-<h1>
-National Parks of Nepal
-</h1>
-
-<p>
-Explore Nepal's beautiful protected areas.
-</p>
-
-</div>
-
-</section>
-
-
-
-<section class="parks-section">
-
-
-<div class="section-title">
-
-<h2>
-Explore Parks
-</h2>
-
-<p>
-Discover forests, mountains and wildlife habitats.
-</p>
-
-</div>
-
-
-
-<div class="parks-grid">
-
-    <div class="park-card">
-
-        <img src="https://images.unsplash.com/photo-1549366021-9f761d450615" alt="Chitwan National Park">
-
-        <div class="park-info">
-
+        <!-- Park Card 1 -->
+        <article class="park-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1549366021-9f761d450615" alt="Chitwan National Park">
+            <span class="park-tag tag-unesco">UNESCO Site</span>
+          </div>
+          <div class="card-body">
             <h3>Chitwan National Park</h3>
+            <p>Nepal's first national park, established in 1973. Celebrated globally for protecting the endangered Greater One-horned Rhino and Royal Bengal Tiger.</p>
 
-            <p>
-                Nepal's first national park and a UNESCO World Heritage Site, famous for the one-horned rhinoceros, Bengal tiger and rich biodiversity.
-            </p>
+            <ul class="park-facts">
+              <li><i class="fa-solid fa-ruler-combined"></i> <strong>Area:</strong> 952.6 km²</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Southern Terai Lowlands</li>
+              <li><i class="fa-solid fa-paw"></i> <strong>Key Wildlife:</strong> Rhinos, Tigers, Gharials</li>
+            </ul>
+          </div>
+        </article>
 
-        </div>
-
-    </div>
-
-
-
-    <div class="park-card">
-
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Sagarmatha National Park">
-
-        <div class="park-info">
-
+        <!-- Park Card 2 -->
+        <article class="park-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Sagarmatha National Park">
+            <span class="park-tag tag-unesco">UNESCO Site</span>
+          </div>
+          <div class="card-body">
             <h3>Sagarmatha National Park</h3>
+            <p>Home to Mount Everest and dramatic high-altitude Himalayan terrains, deep gorges, glaciers, and iconic Sherpa cultural sites.</p>
 
-            <p>
-                Home to Mount Everest and spectacular Himalayan scenery with glaciers, Sherpa villages and unique alpine wildlife.
-            </p>
+            <ul class="park-facts">
+              <li><i class="fa-solid fa-ruler-combined"></i> <strong>Area:</strong> 1,148 km²</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Solukhumbu District</li>
+              <li><i class="fa-solid fa-paw"></i> <strong>Key Wildlife:</strong> Snow Leopards, Musk Deer</li>
+            </ul>
+          </div>
+        </article>
 
-        </div>
-
-    </div>
-
-
-
-    <div class="park-card">
-
-        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="Bardia National Park">
-
-        <div class="park-info">
-
+        <!-- Park Card 3 -->
+        <article class="park-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="Bardia National Park">
+            <span class="park-tag tag-standard">Lowland Reserve</span>
+          </div>
+          <div class="card-body">
             <h3>Bardia National Park</h3>
+            <p>The largest untouched wilderness area in Nepal's Terai region, offering prime territory for spotting wild elephants and tigers.</p>
 
-            <p>
-                Nepal's largest lowland national park, known for Bengal tigers, wild elephants, crocodiles and untouched forests.
-            </p>
+            <ul class="park-facts">
+              <li><i class="fa-solid fa-ruler-combined"></i> <strong>Area:</strong> 968 km²</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Western Nepal</li>
+              <li><i class="fa-solid fa-paw"></i> <strong>Key Wildlife:</strong> Wild Elephants, Tigers</li>
+            </ul>
+          </div>
+        </article>
 
-        </div>
-
-    </div>
-
-
-
-    <div class="park-card">
-
-        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Langtang National Park">
-
-        <div class="park-info">
-
+        <!-- Park Card 4 -->
+        <article class="park-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Langtang National Park">
+            <span class="park-tag tag-standard">Alpine Park</span>
+          </div>
+          <div class="card-body">
             <h3>Langtang National Park</h3>
+            <p>Stretching from oak and pine forests to alpine meadows and glaciers, famous for its high biodiversity and cultural Himalayan trails.</p>
 
-            <p>
-                Famous for snow-capped mountains, red pandas, Himalayan black bears and beautiful trekking routes.
-            </p>
+            <ul class="park-facts">
+              <li><i class="fa-solid fa-ruler-combined"></i> <strong>Area:</strong> 1,710 km²</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Central Himalayas</li>
+              <li><i class="fa-solid fa-paw"></i> <strong>Key Wildlife:</strong> Red Pandas, Black Bears</li>
+            </ul>
+          </div>
+        </article>
 
-        </div>
-
-    </div>
-
-
-
-    <div class="park-card">
-
-        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Rara National Park">
-
-        <div class="park-info">
-
+        <!-- Park Card 5 -->
+        <article class="park-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Rara National Park">
+            <span class="park-tag tag-standard">Mountain Reserve</span>
+          </div>
+          <div class="card-body">
             <h3>Rara National Park</h3>
+            <p>Nepal's smallest national park, protecting pristine coniferous forests and Rara Lake—the largest freshwater lake in the country.</p>
 
-            <p>
-                Home to the stunning Rara Lake, surrounded by pine forests and breathtaking mountain landscapes.
-            </p>
+            <ul class="park-facts">
+              <li><i class="fa-solid fa-ruler-combined"></i> <strong>Area:</strong> 106 km²</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Mugu & Jumla</li>
+              <li><i class="fa-solid fa-paw"></i> <strong>Key Wildlife:</strong> Red Pandas, Himalayan Monals</li>
+            </ul>
+          </div>
+        </article>
 
+        <!-- Park Card 6 -->
+        <article class="park-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" alt="Shivapuri National Park">
+            <span class="park-tag tag-standard">Valley Watershed</span>
+          </div>
+          <div class="card-body">
+            <h3>Shivapuri Nagarjun Park</h3>
+            <p>Located on the northern fringe of Kathmandu Valley, serving as a primary water catchment area and a haven for forest birds.</p>
+
+            <ul class="park-facts">
+              <li><i class="fa-solid fa-ruler-combined"></i> <strong>Area:</strong> 159 km²</li>
+              <li><i class="fa-solid fa-location-dot"></i> <strong>Location:</strong> Kathmandu Region</li>
+              <li><i class="fa-solid fa-paw"></i> <strong>Key Wildlife:</strong> Leopards, Wild Boars, Birds</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Park Initiatives Section -->
+    <section class="initiatives-section">
+      <div class="section-title">
+        <h2>Park Stewardship Programs</h2>
+        <p>Combining strict anti-poaching measures with local community development.</p>
+      </div>
+
+      <div class="initiatives-grid">
+        <div class="initiative-box">
+          <i class="fa-solid fa-shield-cat initiative-icon"></i>
+          <h3>Buffer Zone Management</h3>
+          <p>Sharing park revenue with surrounding villages to support local schooling and healthcare.</p>
         </div>
-
-    </div>
-
-
-
-    <div class="park-card">
-
-        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" alt="Shivapuri National Park">
-
-        <div class="park-info">
-
-            <h3>Shivapuri National Park</h3>
-
-            <p>
-                Located near Kathmandu, this park protects forests, wildlife and one of the valley's most important water sources.
-            </p>
-
+        <div class="initiative-box">
+          <i class="fa-solid fa-tree-city initiative-icon"></i>
+          <h3>Eco-Tourism Guidelines</h3>
+          <p>Regulating jungle safaris and trekking routes to minimize stress on wild fauna.</p>
         </div>
+        <div class="initiative-box">
+          <i class="fa-solid fa-person-military-pointing initiative-icon"></i>
+          <h3>Smart Ranger Patrols</h3>
+          <p>Utilizing real-time GPS tracking and community watch networks to eliminate poaching.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Call to Action Banner -->
+    <section class="nature-banner">
+      <div class="banner-content">
+        <h2>Protect Nepal's Forests</h2>
+        <p>National parks preserve crucial biodiversity and natural carbon sinks. Support our conservation projects today.</p>
+        <a href="campaigns.html" class="btn btn-primary">Support Conservation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2>🌿 Green Nepal</h2>
+      <p>Protect Nature • Protect Future</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Green Nepal. All rights reserved.</p>
     </div>
+  </footer>
 
-</div>
-
-</section>
-
-
-
-
-
-<section class="nature-banner">
-
-
-<h2>
-Protect Nepal's Forests
-</h2>
-
-<p>
-National parks preserve biodiversity and natural ecosystems.
-</p>
-
-
-<a href="campaigns.html">
-Support Conservation
-</a>
-
-
-</section>
-
-
-
-
-<footer>
-
-
-<h2>
-🌿 Green Nepal
-</h2>
-
-<p>
-Protect Nature • Protect Future
-</p>
-
-
-<div class="social">
-
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-youtube"></i>
-
-</div>
-
-
-<p>
-© 2026 Green Nepal
-</p>
-
-
-</footer>
-
-
-
-<script src="js/app.js"></script>
-
+  <script src="js/app.js"></script>
 
 </body>
 
