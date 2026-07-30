@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Green Nepal | Sign Up</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/signup.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🌿 Green Nepal
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="parks.html">Parks</a></li>
+<li><a href="wildlife.html">Wildlife</a></li>
+<li><a href="mountains.html">Mountains</a></li>
+<li><a href="rivers.html">Rivers</a></li>
+<li><a href="campaigns.html">Campaigns</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="signup-hero">
+
+<h1>🌿 Join Green Nepal</h1>
+
+<p>
+Become part of Nepal's growing environmental community.
+</p>
+
+</section>
+
+<!-- SIGNUP FORM -->
+
+<section class="signup-section">
+
+<div class="signup-container">
+
+<h2>Create Your Account</h2>
+
+<form id="signupForm">
+
+<div class="row">
+
+<input
+type="text"
+placeholder="First Name"
+required>
+
+<input
+type="text"
+placeholder="Last Name"
+required>
+
+</div>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<div class="row">
+
+<input
+type="password"
+placeholder="Password"
+required>
+
+<input
+type="password"
+placeholder="Confirm Password"
+required>
+
+</div>
+
+<div class="row">
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<input
+type="date"
+required>
+
+</div>
+
+<input
+type="text"
+placeholder="Full Address"
+required>
+
+<div class="row">
+
+<select required>
+
+<option value="">Province</option>
+
+<option>Koshi</option>
+<option>Madhesh</option>
+<option>Bagmati</option>
+<option>Gandaki</option>
+<option>Lumbini</option>
+<option>Karnali</option>
+<option>Sudurpashchim</option>
+
+</select>
+
+<input
+type="text"
+placeholder="City"
+required>
+
+</div>
+
+<select required>
+
+<option value="">Occupation</option>
+
+<option>Student</option>
+<option>Teacher</option>
+<option>Tourist</option>
+<option>Volunteer</option>
+<option>Researcher</option>
+<option>Other</option>
+
+</select>
+
+<h3>Select Your Interests</h3>
+
+<div class="interest-grid">
+
+<label>
+<input type="checkbox">
+🌳 Tree Plantation
+</label>
+
+<label>
+<input type="checkbox">
+🦏 Wildlife
+</label>
+
+<label>
+<input type="checkbox">
+💧 Rivers
+</label>
+
+<label>
+<input type="checkbox">
+🏔 Mountains
+</label>
+
+<label>
+<input type="checkbox">
+♻️ Clean Nepal
+</label>
+
+<label>
+<input type="checkbox">
+🌱 Sustainable Living
+</label>
+
+</div>
+
+<textarea
+rows="4"
+placeholder="Why do you want to join Green Nepal?"></textarea>
+
+<label class="terms">
+
+<input type="checkbox" required>
+
+I agree to the Terms & Conditions.
+
+</label>
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+<p class="login-link">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🌿 Green Nepal</h2>
+
+<p>Protect Nature • Protect Future</p>
+
+<div class="social">
+
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-youtube"></i>
+
+</div>
+
+<p>
+
+© 2026 Green Nepal
+
+</p>
+
+</footer>
+
+<script>
+
+document.getElementById("signupForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("🎉 Account Created Successfully!");
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>

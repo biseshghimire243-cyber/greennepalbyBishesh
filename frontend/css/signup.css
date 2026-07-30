@@ -1,0 +1,221 @@
+/* ===========================
+   HERO
+=========================== */
+
+.signup-hero{
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    padding:120px 20px;
+    text-align:center;
+    color:#fff;
+}
+
+.signup-hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.signup-hero p{
+    font-size:19px;
+    max-width:700px;
+    margin:auto;
+}
+
+
+/* ===========================
+   SIGNUP SECTION
+=========================== */
+
+.signup-section{
+    background:#f5fff6;
+    padding:80px 8%;
+}
+
+.signup-container{
+    max-width:950px;
+    margin:auto;
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.signup-container h2{
+    text-align:center;
+    color:#2e7d32;
+    margin-bottom:35px;
+    font-size:36px;
+}
+
+
+/* ===========================
+   FORM
+=========================== */
+
+.signup-container form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.signup-container input,
+.signup-container select,
+.signup-container textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    font-family:inherit;
+}
+
+.signup-container input:focus,
+.signup-container select:focus,
+.signup-container textarea:focus{
+    border-color:#2e7d32;
+    box-shadow:0 0 8px rgba(46,125,50,.2);
+}
+
+
+/* ===========================
+   INTERESTS
+=========================== */
+
+.signup-container h3{
+    color:#2e7d32;
+    margin-top:10px;
+}
+
+.interest-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.interest-grid label{
+    background:#eef8ef;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.interest-grid label:hover{
+    background:#dff3e0;
+}
+
+.interest-grid input{
+    width:auto;
+    margin-right:8px;
+}
+
+
+/* ===========================
+   TERMS
+=========================== */
+
+.terms{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#555;
+    font-size:15px;
+}
+
+.terms input{
+    width:auto;
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.signup-container button{
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    padding:16px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+}
+
+.signup-container button:hover{
+    background:#1b5e20;
+    transform:translateY(-3px);
+}
+
+
+/* ===========================
+   LOGIN LINK
+=========================== */
+
+.login-link{
+    text-align:center;
+    margin-top:15px;
+    color:#555;
+}
+
+.login-link a{
+    color:#2e7d32;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.row{
+    grid-template-columns:1fr;
+}
+
+.interest-grid{
+    grid-template-columns:1fr;
+}
+
+.signup-container{
+    padding:30px;
+}
+
+}
+
+@media(max-width:600px){
+
+.signup-hero h1{
+    font-size:38px;
+}
+
+.signup-hero p{
+    font-size:16px;
+}
+
+.signup-container h2{
+    font-size:30px;
+}
+
+.signup-container{
+    padding:25px;
+}
+
+}
