@@ -39,3 +39,20 @@ form.addEventListener("submit", async (e) => {
         alert("Something went wrong!");
     }
 });
+
+
+const donationForm = document.getElementById("donationForm");
+
+donationForm.addEventListener("submit",(e)=>{
+
+e.preventDefault();
+
+const name = donationForm.querySelector('input[type="text"]').value;
+
+const amount = donationForm.querySelector('input[type="number"]').value;
+
+alert(`🎉 Thank you ${name}!\n\nYour donation of Rs. ${amount} will help protect Nepal's forests, wildlife and rivers.`);
+
+donationForm.reset();
+
+});
