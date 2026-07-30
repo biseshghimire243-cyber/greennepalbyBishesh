@@ -1,0 +1,296 @@
+/* ===========================
+   HERO
+=========================== */
+
+.feedback-hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    padding:120px 20px;
+    text-align:center;
+    color:#fff;
+}
+
+.feedback-hero h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.feedback-hero p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* ===========================
+   FEEDBACK SECTION
+=========================== */
+
+.feedback-section{
+    padding:80px 8%;
+    background:#f6fff7;
+}
+
+.feedback-container{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:50px;
+}
+
+.feedback-info h2{
+    font-size:36px;
+    color:#1b5e20;
+    margin-bottom:20px;
+}
+
+.feedback-info p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.info-box{
+    display:flex;
+    gap:20px;
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.info-box:hover{
+    transform:translateY(-8px);
+}
+
+.info-box i{
+    font-size:35px;
+    color:#2e7d32;
+}
+
+.feedback-form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.feedback-form form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus,
+.feedback-form select:focus{
+    border-color:#2e7d32;
+}
+
+.upload{
+    background:#edf7ed;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    text-align:center;
+    color:#2e7d32;
+    font-weight:bold;
+}
+
+.rating{
+    text-align:center;
+}
+
+.rating h3{
+    margin-bottom:10px;
+}
+
+.stars{
+    font-size:28px;
+    color:gold;
+}
+
+.feedback-form button{
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    padding:16px;
+    font-size:18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.feedback-form button:hover{
+    background:#1b5e20;
+    transform:scale(1.03);
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.feedback-stats{
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    background:#2e7d32;
+    color:#fff;
+    text-align:center;
+}
+
+.stat{
+    padding:25px;
+}
+
+.stat h2{
+    font-size:45px;
+}
+
+.stat p{
+    margin-top:10px;
+}
+
+/* ===========================
+   REPORTS
+=========================== */
+
+.report-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.report-section h2{
+    margin-bottom:40px;
+    font-size:38px;
+}
+
+.report-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.report-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    font-size:40px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.report-card h3{
+    margin:15px 0;
+    font-size:22px;
+}
+
+.report-card p{
+    color:#666;
+}
+
+.report-card:hover{
+    transform:translateY(-10px);
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+.faq-section{
+    background:#f7f7f7;
+    padding:80px 8%;
+}
+
+.faq-section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.faq{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.faq-item h3{
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    color:#666;
+}
+
+/* ===========================
+   THANK YOU
+=========================== */
+
+.thanks{
+    padding:80px 20px;
+    text-align:center;
+    background:#e8f5e9;
+}
+
+.thanks h2{
+    font-size:42px;
+    color:#2e7d32;
+}
+
+.thanks p{
+    margin-top:15px;
+    font-size:18px;
+    color:#555;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.feedback-container{
+    grid-template-columns:1fr;
+}
+
+.feedback-stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.feedback-hero h1{
+    font-size:38px;
+}
+
+.feedback-stats{
+    grid-template-columns:1fr;
+}
+
+.report-grid{
+    grid-template-columns:1fr;
+}
+
+}
