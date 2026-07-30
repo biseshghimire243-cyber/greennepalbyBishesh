@@ -39,24 +39,37 @@ app.get("/", (req, res) => {
 
 // ---------------- REGISTER ----------------
 
-app.post("/register", (req, res) => {
+app.post("/register", async (req, res) => {
 
     const { name, email, password } = req.body;
 
-    const sql = "INSERT INTO users(name,email,password) VALUES(?,?,?)";
+    try {
 
-    db.query(sql, [name, email, password], (err, result) => {
+        const hashedPassword = await bcrypt.hash(password, 10);
 
-        if (err) {
-            return res.status(500).json(err);
-        }
+        const sql = "INSERT INTO users(name,email,password) VALUES(?,?,?)";
 
-        res.json({
-            success: true,
-            message: "Registration Successful"
+        db.query(sql, [name, email, hashedPassword], (err, result) => {
+
+            if (err) {
+                return res.status(500).json(err);
+            }
+
+            res.json({
+                success: true,
+                message: "Registration Successful"
+            });
+
         });
 
-    });
+    } catch (error) {
+
+        res.status(500).json({
+            success: false,
+            message: "Error while registering user"
+        });
+
+    }
 
 });
 
@@ -66,24 +79,47 @@ app.post("/login", (req, res) => {
 
     const { email, password } = req.body;
 
-    const sql = "SELECT * FROM users WHERE email=? AND password=?";
+    const sql = "SELECT * FROM users WHERE email=?";
 
-    db.query(sql, [email, password], (err, result) => {
+    db.query(sql, [email], async (err, result) => {
 
         if (err) {
             return res.status(500).json(err);
         }
 
         if (result.length === 0) {
+
             return res.json({
                 success: false,
-                message: "Invalid Email or Password"
+                message: "Invalid Email"
             });
+
+        }
+
+        const user = result[0];
+
+        const match = await bcrypt.compare(password, user.password);
+
+        if (!match) {
+
+            return res.json({
+                success: false,
+                message: "Incorrect Password"
+            });
+
         }
 
         res.json({
+
             success: true,
-            user: result[0]
+            message: "Login Successful",
+
+            user: {
+                id: user.id,
+                name: user.name,
+                email: user.email
+            }
+
         });
 
     });
