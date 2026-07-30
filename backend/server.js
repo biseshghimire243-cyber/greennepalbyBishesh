@@ -3,6 +3,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
+const bcrypt = require("bcrypt");
 
 dotenv.config();
 
