@@ -3,251 +3,246 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Green Nepal | Sign Up</title>
+    <title>Green Nepal | Sign Up</title>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+    <header>
 
-<nav class="navbar">
+        <nav class="navbar">
 
-<div class="logo">
-🌿 Green Nepal
-</div>
+            <div class="logo">
+                <a href="index.html">🌿 Green Nepal</a>
+            </div>
 
-<ul class="nav-links">
+            <ul class="nav-links">
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="parks.html">Parks</a></li>
-<li><a href="wildlife.html">Wildlife</a></li>
-<li><a href="mountains.html">Mountains</a></li>
-<li><a href="rivers.html">Rivers</a></li>
-<li><a href="campaigns.html">Campaigns</a></li>
-<li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="parks.html">Parks</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="mountains.html">Mountains</a></li>
+                <li><a href="rivers.html">Rivers</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-</ul>
+            </ul>
 
-</nav>
+        </nav>
 
-</header>
+    </header>
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<section class="signup-hero">
+    <section class="signup-hero">
 
-<h1>🌿 Join Green Nepal</h1>
+        <h1>🌿 Join Green Nepal</h1>
 
-<p>
-Become part of Nepal's growing environmental community.
-</p>
+        <p>
+            Become part of Nepal's growing environmental community.
+        </p>
 
-</section>
+    </section>
 
-<!-- SIGNUP FORM -->
+    <!-- SIGNUP -->
 
-<section class="signup-section">
+    <section class="signup-section">
 
-<div class="signup-container">
+        <div class="signup-container">
 
-<h2>Create Your Account</h2>
+            <h2>Create Your Account</h2>
 
-<form id="signupForm">
+            <form id="signupForm">
 
-<div class="row">
+                <div class="row">
 
-<input
-type="text"
-placeholder="First Name"
-required>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="First Name"
+                        required>
 
-<input
-type="text"
-placeholder="Last Name"
-required>
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Last Name"
+                        required>
 
-</div>
+                </div>
 
-<input
-type="email"
-placeholder="Email Address"
-required>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
 
-<div class="row">
+                <div class="row">
 
-<input
-type="password"
-placeholder="Password"
-required>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required>
 
-<input
-type="password"
-placeholder="Confirm Password"
-required>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
 
-</div>
+                </div>
 
-<div class="row">
+                <div class="row">
 
-<input
-type="tel"
-placeholder="Phone Number"
-required>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Phone Number"
+                        required>
 
-<input
-type="date"
-required>
+                    <input
+                        type="date"
+                        id="dob"
+                        required>
 
-</div>
+                </div>
 
-<input
-type="text"
-placeholder="Full Address"
-required>
+                <input
+                    type="text"
+                    id="address"
+                    placeholder="Full Address"
+                    required>
 
-<div class="row">
+                <div class="row">
 
-<select required>
+                    <select id="province" required>
 
-<option value="">Province</option>
+                        <option value="">Province</option>
 
-<option>Koshi</option>
-<option>Madhesh</option>
-<option>Bagmati</option>
-<option>Gandaki</option>
-<option>Lumbini</option>
-<option>Karnali</option>
-<option>Sudurpashchim</option>
+                        <option>Koshi</option>
+                        <option>Madhesh</option>
+                        <option>Bagmati</option>
+                        <option>Gandaki</option>
+                        <option>Lumbini</option>
+                        <option>Karnali</option>
+                        <option>Sudurpashchim</option>
 
-</select>
+                    </select>
 
-<input
-type="text"
-placeholder="City"
-required>
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="City"
+                        required>
 
-</div>
+                </div>
 
-<select required>
+                <select id="occupation" required>
 
-<option value="">Occupation</option>
+                    <option value="">Occupation</option>
 
-<option>Student</option>
-<option>Teacher</option>
-<option>Tourist</option>
-<option>Volunteer</option>
-<option>Researcher</option>
-<option>Other</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Tourist</option>
+                    <option>Volunteer</option>
+                    <option>Researcher</option>
+                    <option>Other</option>
 
-</select>
+                </select>
 
-<h3>Select Your Interests</h3>
+                <h3>Select Your Interests</h3>
 
-<div class="interest-grid">
+                <div class="interest-grid">
 
-<label>
-<input type="checkbox">
-🌳 Tree Plantation
-</label>
+                    <label><input type="checkbox"> 🌳 Tree Plantation</label>
 
-<label>
-<input type="checkbox">
-🦏 Wildlife
-</label>
+                    <label><input type="checkbox"> 🦏 Wildlife</label>
 
-<label>
-<input type="checkbox">
-💧 Rivers
-</label>
+                    <label><input type="checkbox"> 💧 Rivers</label>
 
-<label>
-<input type="checkbox">
-🏔 Mountains
-</label>
+                    <label><input type="checkbox"> 🏔 Mountains</label>
 
-<label>
-<input type="checkbox">
-♻️ Clean Nepal
-</label>
+                    <label><input type="checkbox"> ♻️ Clean Nepal</label>
 
-<label>
-<input type="checkbox">
-🌱 Sustainable Living
-</label>
+                    <label><input type="checkbox"> 🌱 Sustainable Living</label>
 
-</div>
+                </div>
 
-<textarea
-rows="4"
-placeholder="Why do you want to join Green Nepal?"></textarea>
+                <textarea
+                    id="reason"
+                    rows="4"
+                    placeholder="Why do you want to join Green Nepal?"></textarea>
 
-<label class="terms">
+                <label class="terms">
 
-<input type="checkbox" required>
+                    <input type="checkbox" required>
 
-I agree to the Terms & Conditions.
+                    I agree to the Terms & Conditions.
 
-</label>
+                </label>
 
-<button type="submit">
+                <button type="submit">
 
-Create Account
+                    <i class="fa-solid fa-user-plus"></i>
 
-</button>
+                    Create Account
 
-<p class="login-link">
+                </button>
 
-Already have an account?
+                <p class="login-link">
 
-<a href="login.html">
+                    Already have an account?
 
-Login
+                    <a href="login.html">
 
-</a>
+                        Login
 
-</p>
+                    </a>
 
-</form>
+                </p>
 
-</div>
+            </form>
 
-</section>
+        </div>
 
-<footer>
+    </section>
 
-<h2>🌿 Green Nepal</h2>
+    <footer>
 
-<p>Protect Nature • Protect Future</p>
+        <h2>🌿 Green Nepal</h2>
 
-<div class="social">
+        <p>Protect Nature • Protect Future</p>
 
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-youtube"></i>
+        <div class="social">
 
-</div>
+            <i class="fa-brands fa-facebook"></i>
 
-<p>
+            <i class="fa-brands fa-instagram"></i>
 
-© 2026 Green Nepal
+            <i class="fa-brands fa-youtube"></i>
 
-</p>
+        </div>
 
-</footer>
+        <p>
 
+            © 2026 Green Nepal
 
-<script src="js/signup.js"></script>
+        </p>
+
+    </footer>
+
+    <script src="js/signup.js"></script>
 
 </body>
 
