@@ -162,3 +162,46 @@ document.addEventListener("DOMContentLoaded", () => {
   initCounters();
   initContactForm();
 });
+
+// ==========================
+// GALLERY FILTER
+// ==========================
+
+const filterButtons = document.querySelectorAll(".gallery-filter button");
+const galleryCards = document.querySelectorAll(".gallery-card");
+
+filterButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+filterButtons.forEach(btn=>btn.classList.remove("active"));
+
+button.classList.add("active");
+
+const filter = button.dataset.filter;
+
+galleryCards.forEach(card=>{
+
+if(filter==="all"){
+
+card.style.display="block";
+
+}
+
+else if(card.classList.contains(filter)){
+
+card.style.display="block";
+
+}
+
+else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+});
