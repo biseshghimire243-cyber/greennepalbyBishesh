@@ -28,13 +28,21 @@ body {
 /* ==========================================================================
    Hero Section
    ========================================================================== */
-.campaign-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('../images/hero-bg.jpg') center/cover no-repeat;
-  background-color: var(--primary-dark); /* Fallback */
-  color: var(--white);
-  text-align: center;
-  padding: 100px 20px;
+.campaign-hero{
+    background:
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6c?auto=format&fit=crop&w=1920&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:100px 20px;
 }
 
 .hero-content {
