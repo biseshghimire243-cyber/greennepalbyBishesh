@@ -2,135 +2,202 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Nepal | Campaigns</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Green Nepal | Campaigns</title>
-
-<link rel="stylesheet" href="css/style.css">
-
-<link rel="stylesheet" href="css/campaigns.css">
-
+  <!-- External Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/campaigns.css">
 </head>
-
 
 <body>
 
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">🌿 Green Nepal</a>
+      </div>
 
-<header>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="parks.html">Parks</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="rivers.html">Rivers</a></li>
+        <li><a class="active" href="campaigns.html">Campaigns</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<nav class="navbar">
+  <main>
+    <!-- Hero Section -->
+    <section class="campaign-hero">
+      <div class="hero-content">
+        <h1>Environmental Campaigns</h1>
+        <p>Join hands with us to protect, restore, and make Nepal greener for future generations.</p>
+        <a href="#active-campaigns" class="btn btn-primary">Explore Campaigns</a>
+      </div>
+    </section>
 
-<div class="logo">
-🌿 Green Nepal
-</div>
+    <!-- Key Impact Stats Banner -->
+    <section class="stats-banner">
+      <div class="stat-item">
+        <h3>50,000+</h3>
+        <p>Trees Planted</p>
+      </div>
+      <div class="stat-item">
+        <h3>12</h3>
+        <p>Clean-up Drives</p>
+      </div>
+      <div class="stat-item">
+        <h3>5,000+</h3>
+        <p>Active Volunteers</p>
+      </div>
+    </section>
 
+    <!-- Active Campaigns Section -->
+    <section id="active-campaigns" class="campaign-section">
+      <div class="section-title">
+        <h2>Active Initiatives</h2>
+        <p>Take action today by supporting or joining our ongoing projects.</p>
+      </div>
 
-<ul class="nav-links">
+      <div class="campaign-grid">
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="parks.html">Parks</a></li>
-<li><a href="wildlife.html">Wildlife</a></li>
-<li><a href="mountains.html">Mountains</a></li>
-<li><a href="rivers.html">Rivers</a></li>
-<li><a class="active" href="campaigns.html">Campaigns</a></li>
-<li><a href="contact.html">Contact</a></li>
+        <!-- Campaign Card 1 -->
+        <article class="campaign-card">
+          <div class="card-badge badge-active">Active</div>
+          <div class="card-icon">🌳</div>
+          <h3>One Million Trees Initiative</h3>
+          <p>Restoring degraded forest areas across the Terai belt and urban community spaces through community-led tree plantation drives.</p>
+          
+          <div class="campaign-progress">
+            <div class="progress-info">
+              <span>Goal: 10,000 Trees</span>
+              <span><strong>8,200 Planted</strong></span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 82%;"></div>
+            </div>
+          </div>
 
-</ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary">Join Drive</a>
+            <a href="#" class="btn btn-secondary">Donate</a>
+          </div>
+        </article>
 
-</nav>
+        <!-- Campaign Card 2 -->
+        <article class="campaign-card">
+          <div class="card-badge badge-urgent">Urgent</div>
+          <div class="card-icon">🦏</div>
+          <h3>Rhino & Elephant Habitat Protection</h3>
+          <p>Combating poaching and expanding safe corridors for endangered One-Horned Rhinos and Wild Elephants in Chitwan & Bardia.</p>
+          
+          <div class="campaign-progress">
+            <div class="progress-info">
+              <span>Raised: $15,400</span>
+              <span><strong>Goal: $20,000</strong></span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 77%;"></div>
+            </div>
+          </div>
 
-</header>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary">Support Cause</a>
+            <a href="#" class="btn btn-secondary">Donate</a>
+          </div>
+        </article>
 
+        <!-- Campaign Card 3 -->
+        <article class="campaign-card">
+          <div class="card-badge badge-active">Active</div>
+          <div class="card-icon">♻️</div>
+          <h3>Clean Bagmati & Himalayas</h3>
+          <p>Organizing weekly waste collection drives along the Bagmati riverbanks and trekking routes to eliminate single-use plastics.</p>
+          
+          <div class="campaign-progress">
+            <div class="progress-info">
+              <span>Goal: 50 Tons Waste</span>
+              <span><strong>34 Tons Cleaned</strong></span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 68%;"></div>
+            </div>
+          </div>
 
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary">Volunteer</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+        </article>
 
+      </div>
+    </section>
 
-<section class="campaign-hero">
+    <!-- Upcoming Events Section -->
+    <section class="events-section">
+      <div class="section-title">
+        <h2>Upcoming Volunteer Events</h2>
+        <p>Get involved on the ground. Find an event near you.</p>
+      </div>
 
-<h1>
-Environmental Campaigns
-</h1>
+      <div class="events-list">
+        <div class="event-item">
+          <div class="event-date">
+            <span class="day">15</span>
+            <span class="month">AUG</span>
+          </div>
+          <div class="event-details">
+            <h3>Kathmandu City Clean-up Drive</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Pashupatinath Area, Kathmandu</p>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Register</a>
+        </div>
 
-<p>
-Together we can make Nepal greener.
-</p>
+        <div class="event-item">
+          <div class="event-date">
+            <span class="day">22</span>
+            <span class="month">AUG</span>
+          </div>
+          <div class="event-details">
+            <h3>Pokhara Lakeside Plantation Day</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Fewa Lake Margin, Pokhara</p>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Register</a>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- Call to Action Banner -->
+    <section class="newsletter-cta">
+      <h2>Stay Updated & Get Involved</h2>
+      <p>Subscribe to receive updates on upcoming drives and environmental news in Nepal.</p>
+      <form class="subscribe-form" action="#" method="POST">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </section>
+  </main>
 
-
-
-
-<section class="campaign-section">
-
-
-<div class="campaign-grid">
-
-
-<div class="campaign-card">
-
-<h2>
-🌳 Tree Plantation
-</h2>
-
-<p>
-Plant trees and restore forests.
-</p>
-
-</div>
-
-
-
-<div class="campaign-card">
-
-<h2>
-🦏 Wildlife Protection
-</h2>
-
-<p>
-Protect endangered animals.
-</p>
-
-</div>
-
-
-
-<div class="campaign-card">
-
-<h2>
-♻️ Clean Nepal
-</h2>
-
-<p>
-Reduce waste and pollution.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-<footer>
-
-<h2>
-🌿 Green Nepal
-</h2>
-
-<p>
-Protect Nature • Protect Future
-</p>
-
-</footer>
-
+  <footer>
+    <div class="footer-content">
+      <h2>🌿 Green Nepal</h2>
+      <p>Protect Nature • Protect Future</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Green Nepal. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 
