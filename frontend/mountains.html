@@ -2,169 +2,178 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Nepal | Mountains</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-<title>Green Nepal | Mountains</title>
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/mountains.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mountains.css">
 </head>
-
 
 <body>
 
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-🌿 Green Nepal
-</div>
-
-<ul class="nav-links">
-
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="parks.html">Parks</a></li>
-<li><a href="wildlife.html">Wildlife</a></li>
-<li><a class="active" href="mountains.html">Mountains</a></li>
-<li><a href="rivers.html">Rivers</a></li>
-<li><a href="campaigns.html">Campaigns</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-
-
-
-<section class="mountain-hero">
-
-<div>
-
-<h1>
-Mountains of Nepal
-</h1>
-
-<p>
-Home of the world's highest peaks.
-</p>
-
-</div>
-
-</section>
-
-
-
-
-<section class="mountain-section">
-
-
-<div class="section-title">
-
-<h2>
-Famous Himalayan Peaks
-</h2>
-
-<p>
-Explore the beauty of Nepal's mountains.
-</p>
-
-</div>
-
-
-<div class="mountain-grid">
-
-
-<div class="mountain-card">
-
-<img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa" alt="Mount Everest">
-
-<h3>Mount Everest</h3>
-
-<p>
-The highest mountain in the world at 8,848.86 meters.
-</p>
-
-</div>
-
-
-
-<div class="mountain-card">
-
-<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Annapurna Mountain">
-
-<h3>Annapurna</h3>
-
-<p>
-A beautiful Himalayan range famous for trekking.
-</p>
-
-</div>
-
-
-
-
-<div class="mountain-card">
-
-<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Himalayan Mountain">
-
-<h3>Mount Manaslu</h3>
-
-<p>
-The eighth highest mountain in the world.
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<section class="nature-banner">
-
-<h2>
-Protect The Himalayas
-</h2>
-
-<p>
-Keep our mountains clean and beautiful.
-</p>
-
-
-<a href="campaigns.html">
-Join Us
-</a>
-
-</section>
-
-
-
-<footer>
-
-<h2>🌿 Green Nepal</h2>
-
-<p>Protect Nature • Protect Future</p>
-
-<p>© 2026 Green Nepal</p>
-
-</footer>
-
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">🌿 Green Nepal</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="parks.html">Parks</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a class="active" href="mountains.html">Mountains</a></li>
+        <li><a href="rivers.html">Rivers</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="mountain-hero">
+      <div class="hero-content">
+        <h1>Mountains of Nepal</h1>
+        <p>Home to eight of the world's fourteen highest peaks, preserving pristine alpine ecosystems.</p>
+        <a href="#famous-peaks" class="btn btn-primary">Explore Peaks</a>
+      </div>
+    </section>
+
+    <!-- Key Statistics -->
+    <section class="stats-banner">
+      <div class="stat-item">
+        <h3>8,848.86m</h3>
+        <p>Highest Point</p>
+      </div>
+      <div class="stat-item">
+        <h3>8 of 14</h3>
+        <p>World's Highest Peaks</p>
+      </div>
+      <div class="stat-item">
+        <h3>1,310+</h3>
+        <p>Identified Peaks</p>
+      </div>
+    </section>
+
+    <!-- Famous Peaks Section -->
+    <section id="famous-peaks" class="mountain-section">
+      <div class="section-title">
+        <h2>Famous Himalayan Peaks</h2>
+        <p>Explore the awe-inspiring giants that define Nepal's natural heritage.</p>
+      </div>
+
+      <div class="mountain-grid">
+
+        <!-- Peak Card 1 -->
+        <article class="mountain-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa" alt="Mount Everest">
+            <span class="mountain-tag">Sagarmatha Region</span>
+          </div>
+          <div class="card-body">
+            <h3>Mount Everest</h3>
+            <p>Known as Sagarmatha in Nepal, Mount Everest stands as the roof of the world and the ultimate symbol of Himalayan splendor.</p>
+
+            <ul class="mountain-facts">
+              <li><i class="fa-solid fa-mountain-sun"></i> <strong>Elevation:</strong> 8,848.86 m</li>
+              <li><i class="fa-solid fa-map-pin"></i> <strong>Location:</strong> Solukhumbu</li>
+              <li><i class="fa-solid fa-person-hiking"></i> <strong>Highlight:</strong> Sagarmatha National Park</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Peak Card 2 -->
+        <article class="mountain-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Annapurna Mountain">
+            <span class="mountain-tag">Annapurna Region</span>
+          </div>
+          <div class="card-body">
+            <h3>Annapurna I</h3>
+            <p>A breathtaking massif in central Nepal known worldwide for the iconic Annapurna Circuit and rich alpine biodiversity.</p>
+
+            <ul class="mountain-facts">
+              <li><i class="fa-solid fa-mountain-sun"></i> <strong>Elevation:</strong> 8,091 m</li>
+              <li><i class="fa-solid fa-map-pin"></i> <strong>Location:</strong> Gandaki Province</li>
+              <li><i class="fa-solid fa-person-hiking"></i> <strong>Highlight:</strong> World's Top Trekking Trail</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Peak Card 3 -->
+        <article class="mountain-card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Mount Manaslu">
+            <span class="mountain-tag">Gorkha Region</span>
+          </div>
+          <div class="card-body">
+            <h3>Mount Manaslu</h3>
+            <p>Known as the "Mountain of the Spirit", Manaslu is the 8th highest mountain in the world, offering remote alpine vistas.</p>
+
+            <ul class="mountain-facts">
+              <li><i class="fa-solid fa-mountain-sun"></i> <strong>Elevation:</strong> 8,163 m</li>
+              <li><i class="fa-solid fa-map-pin"></i> <strong>Location:</strong> West-Central Nepal</li>
+              <li><i class="fa-solid fa-person-hiking"></i> <strong>Highlight:</strong> Manaslu Conservation Area</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Conservation Section -->
+    <section class="conservation-section">
+      <div class="section-title">
+        <h2>Himalayan Conservation Efforts</h2>
+        <p>Protecting vulnerable alpine landscapes from pollution and climate impacts.</p>
+      </div>
+
+      <div class="conservation-grid">
+        <div class="conservation-box">
+          <i class="fa-solid fa-trash-can-arrow-up conservation-icon"></i>
+          <h3>High-Altitude Cleanups</h3>
+          <p>Removing waste from climbing camps to keep peak routes clean and sustainable.</p>
+        </div>
+        <div class="conservation-box">
+          <i class="fa-solid fa-temperature-arrow-up conservation-icon"></i>
+          <h3>Glacial Monitoring</h3>
+          <p>Studying glacial melt rates to mitigate downstream flood risks and climate shifts.</p>
+        </div>
+        <div class="conservation-box">
+          <i class="fa-solid fa-footprints conservation-icon"></i>
+          <h3>Eco-Trekking Standards</h3>
+          <p>Promoting leave-no-trace ethics for mountain guides and international trekkers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="nature-banner">
+      <div class="banner-content">
+        <h2>Protect The Himalayas</h2>
+        <p>Keep our high-altitude ecosystems pristine for generations to come. Join our mountain conservation drives.</p>
+        <a href="campaigns.html" class="btn btn-primary">Join Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h2>🌿 Green Nepal</h2>
+      <p>Protect Nature • Protect Future</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="copyright">&copy; 2026 Green Nepal. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 
